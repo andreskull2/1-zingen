@@ -10,3 +10,5 @@ Neste vídeo, criamos classes utilitárias para facilitar a codificaçnao do pro
 ## Adicionando classes utilitárias parte 2
 Neste trecho, expliquei como definir tamanhos de altura e padding de forma dinâmica em um projeto de design responsivo. Introduzi variáveis para ajustar o padding verticalmente, criando classes utilitárias para ocultar elementos em diferentes tamanhos de tela. Destaquei a abordagem "mobile first" e a criação da classe "Even Columns" para organizar elementos em colunas iguais em diferentes dispositivos. Essas estratégias visam facilitar a construção e adaptação de layouts em projetos web.
 
+## Componente de botão 1
+Neste vídeo, criamos um componente de botão com diferentes estilos e tamanhos. Utilizamos CSS para estilizar os botões, definindo propriedades como borda, cor de fundo, cor do texto e espaçamento. Também exploramos a criação de classes utilitárias para facilitar o desenvolvimento. Ao final, aplicamos efeitos de hover nos botões, como mudança de cor de fundo e degradê. A abordagem foi prática e focada em criar botões personalizados e responsivos.
