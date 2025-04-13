@@ -12,3 +12,6 @@ Neste trecho, expliquei como definir tamanhos de altura e padding de forma dinâ
 
 ## Componente de botão 1
 Neste vídeo, criamos um componente de botão com diferentes estilos e tamanhos. Utilizamos CSS para estilizar os botões, definindo propriedades como borda, cor de fundo, cor do texto e espaçamento. Também exploramos a criação de classes utilitárias para facilitar o desenvolvimento. Ao final, aplicamos efeitos de hover nos botões, como mudança de cor de fundo e degradê. A abordagem foi prática e focada em criar botões personalizados e responsivos.
+
+## Componentes de botão 2
+Neste vídeo, expliquei como criar um botão secundário com uma estratégia diferente de CSS, usando aria-label para acessibilidade.
