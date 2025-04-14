@@ -18,3 +18,7 @@ Neste vídeo, expliquei como criar um botão secundário com uma estratégia dif
 
 ## Componente de menu e social icons
 Neste trecho, eu explico como preencher um menu com URLs e ícones sociais. Demonstro a criação de degradês nos links, a importação e renomeação de ícones SVG, e a definição de estilos CSS para os ícones. Destaco a importância de definir classes e propriedades como largura e altura para os ícones. Ao final, menciono a aplicação dos ícones no layout do card.
+
+## Criando o header
+Neste trecho da aula, foi abordado o processo de criação de um header para um site. O instrutor demonstrou como definir um container, adicionar uma navegação com links para diferentes seções, como criar uma logomarca e ajustar o alinhamento dos elementos. Também foi mencionado o uso de classes específicas, a importância de ajustar tamanhos de botões de acordo com a largura da tela e a resolução de problemas de layout.
+
