@@ -22,3 +22,5 @@ Neste trecho, eu explico como preencher um menu com URLs e ícones sociais. Demo
 ## Criando o header
 Neste trecho da aula, foi abordado o processo de criação de um header para um site. O instrutor demonstrou como definir um container, adicionar uma navegação com links para diferentes seções, como criar uma logomarca e ajustar o alinhamento dos elementos. Também foi mencionado o uso de classes específicas, a importância de ajustar tamanhos de botões de acordo com a largura da tela e a resolução de problemas de layout.
 
+## Montando a hero section
+Nessa aula vamos criar a Hero Section da landing page.
