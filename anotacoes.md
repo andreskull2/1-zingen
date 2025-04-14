@@ -27,3 +27,7 @@ Nessa aula vamos criar a Hero Section da landing page.
 
 ## Criando a seção about
 Neste vídeo, vamos criar a sessão "About" do projeto, destacando a importância de estruturar corretamente o código HTML e CSS. 
+
+## Seção features 1
+Nesta aula, vamos criar a seção features do projeto.
+
