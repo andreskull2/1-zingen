@@ -15,3 +15,6 @@ Neste vídeo, criamos um componente de botão com diferentes estilos e tamanhos.
 
 ## Componentes de botão 2
 Neste vídeo, expliquei como criar um botão secundário com uma estratégia diferente de CSS, usando aria-label para acessibilidade.
+
+## Componente de menu e social icons
+Neste trecho, eu explico como preencher um menu com URLs e ícones sociais. Demonstro a criação de degradês nos links, a importação e renomeação de ícones SVG, e a definição de estilos CSS para os ícones. Destaco a importância de definir classes e propriedades como largura e altura para os ícones. Ao final, menciono a aplicação dos ícones no layout do card.
