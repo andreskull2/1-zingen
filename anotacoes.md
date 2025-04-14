@@ -24,3 +24,6 @@ Neste trecho da aula, foi abordado o processo de criação de um header para um 
 
 ## Montando a hero section
 Nessa aula vamos criar a Hero Section da landing page.
+
+## Criando a seção about
+Neste vídeo, vamos criar a sessão "About" do projeto, destacando a importância de estruturar corretamente o código HTML e CSS. 
