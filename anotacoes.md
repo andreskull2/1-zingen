@@ -31,3 +31,5 @@ Neste vídeo, vamos criar a sessão "About" do projeto, destacando a importânci
 ## Seção features 1
 Nesta aula, vamos criar a seção features do projeto.
 
+## Seção features 2
+Nesta aula, vamos continuar criando a seção features do projeto
