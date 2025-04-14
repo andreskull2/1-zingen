@@ -10,3 +10,4 @@
 
 /* Este só será importado se for tela com largura mínima de 80em */
 @import url("features.css") screen and (min-width: 80em);
+@import url(pricing.css);

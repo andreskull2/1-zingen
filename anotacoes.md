@@ -32,4 +32,11 @@ Neste vídeo, vamos criar a sessão "About" do projeto, destacando a importânci
 Nesta aula, vamos criar a seção features do projeto.
 
 ## Seção features 2
-Nesta aula, vamos continuar criando a seção features do projeto
+Nesta aula, vamos continuar criando a seção features do projeto.
+
+## Seção pricing 1
+Neste trecho da aula, vamos criar a seção de planos e preços, destacando a estruturação do HTML com tags semânticas e a importância de seguir as práticas recomendadas.
+
+## Seção pricing 2
+Na aula, foi abordado o uso de listas e a criação de um card especial. Para as listas, foram aplicadas cores e estilos específicos em cada elemento, como padding e tamanhos de fonte. Já para o card especial, foi detalhado o HTML e a estilização, incluindo um degradê nas bordas. Dicas práticas foram compartilhadas, como a importância de observar detalhes no design e utilizar ferramentas como o Figma para auxiliar na implementação. A aula focou em alinhamento e ajustes de elementos para um layout harmonioso.
+
