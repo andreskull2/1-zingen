@@ -1,9 +1,12 @@
+/* Classe para o card */ 
 .card {
     background: var(--surface-color);
+    /* CSS Borda Sutil */
     border: 1px solid var(--stroke-color);
+    /* CSS Raio da Borda */
     border-radius: 1.5rem;
-}
 
-.card h3 {
-    margin-top: 1rem;
+    & h3 {
+        margin-top: 1rem;
+    }
 }

@@ -1,121 +1,146 @@
+/* ID Pricing */
 #pricing {
+
+    /* Variável Font Size Price */
     --fs-price: 2rem;
-}
 
-#pricing header {
-    text-align: center;
-}
+    /* Centraliza o Header */
+    & header {
+        text-align: center;
+    }
 
-#pricing .cards {
-    margin-top: 2rem;
-}
+    /* Espaço superior */
+    & .cards {
+        margin-top: 2rem;
+    }
 
-#pricing h3 {
-    font-size: 1.25rem;
-    margin-top: 0;
-}
+    & h3 {
+        font-size: 1.25rem;
+        margin-top: 0;
+    }
 
-#pricing zin-pricing {
-    display: block;
-    padding-block: 1.5rem;
-    font: var(--fw-bold) var(--fs-price) / 1.2 var(--ff-sans);
-}
+    & .card p {
+        margin-top: .25rem; /* 4px/16=0.25rem */
+    }
 
-#pricing zin-pricing small {
-    font: var(--fw-base) 1rem/125% var(--ff-sans);
-    color: var(--text-color-secondary);
-}
+    /* Preço */
+    & zin-pricing {
+        display: block;
+        padding-block: 1.5rem;
+        font: var(--fw-bold) var(--fs-price)/1.2 var(--ff-sans);
+    }
 
-#pricing .btn {
-    width: 100%;
-}
+    /* Informação complementar */
+    & zin-pricing small {
+        font: var(--fw-base) 1rem/125% var(--ff-sans);
+        color: var(--text-color-secondary);
+    }
 
-#pricing .separator {
-    height: 1px;
-    margin-block: 2rem;
-    background: radial-gradient(
-        var(--text-color-secondary),
-        var(--surface-color) 70%
-    );
-}
+    .btn {
+        width: 100%;
+    }
 
-#pricing li {
-    color: var(--text-color-secondary);
-    background: url(../assets/icons/Check.svg) no-repeat;
-    padding-left: 2rem;
-}
+    & .separator {
+        height: 1px;
+        margin-block: 2rem;
 
-#pricing ul + small {
-    display: block;
-    margin-top: 1.5rem;
-    font-size: 0.875rem;
-    color: var(--text-color-secondary);
-}
+        /* Efeito de Transparência */
+        background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
+    }
 
-/* .premium e seus filhos */
-#pricing .premium {
-    position: relative;
-    padding: 2px;
-}
+    & li {
+        color: var(--text-color-secondary);
+        background: url(../assets/icons/Check.svg) no-repeat;
+        padding-left: 2rem;
+    }
 
-#pricing .premium .card {
-    padding-top: 4.25rem;
-}
+    & ul + small {
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 0.875rem;
+        color: var(--text-color-secondary);
+    }
 
-#pricing .premium .card > span {
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* Destaque parte superior */
+    & .premium {
+        position: relative;
+            & .card {
+                padding-top: 4.25rem;
 
-    padding: 0.75rem 2rem;
-    background: linear-gradient(
-        90deg,
-        var(--brand-color-secondary) 0%,
-        var(--brand-color-primary) 100%
-    );
+                & > span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
 
-    border-top-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+                padding: .75rem 2rem;
+                background: linear-gradient(
+                    90deg,
+                    var(--brand-color-secondary) 0%,
+                    var(--brand-color-primary) 100%
+                );
 
-    font: 600 var(--fs-sm) var(--ff-sans);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--bg-color);
-}
+                border-top-left-radius: 1.5rem;
+                border-bottom-right-radius: 1.5rem;
 
-#pricing .premium::before {
-    content: '';
-    background: linear-gradient(
-        90deg,
-        var(--brand-color-secondary) 0%,
-        var(--brand-color-primary) 100%
-    );
-    position: absolute;
-    inset: 0;
-    border-radius: 1.5rem;
-    z-index: -1;
-}
+                font: 600 var(--fs-sm) var(--ff-sans);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                color: var(--bg-color);
+            }
+        }
 
-@media (min-width: 80em) {
-    #pricing {
+        /* Isso aqui vai criar a borda abaixo */
+        padding: 2px;
+
+        /* Essa é a borda gradiente */
+        &::before {
+
+            /* Elemento vazio */
+            content: "";
+
+            /* Gradiente */
+            background: linear-gradient(
+                    90deg,
+                    var(--brand-color-secondary) 0%,
+                    var(--brand-color-primary) 100%
+                );
+
+                /* Posição absoluta em relação a premium */
+                position: absolute;
+
+                /* Aqui o Gradiente preenche todo o conteúdo de Premium */
+                inset: 0;
+
+                /* Borda */
+                border-radius: 1.5rem;
+
+                /* Foi enviado para traz - Eixo Z */
+                z-index: -1;
+
+        }
+    }
+
+    /* Desktop */
+    @media (width >=80em) {
+        /* Variável para Preço */
         --fs-price: 2.5rem;
-    }
 
-    #pricing header {
-        max-width: 50rem;
-        margin-inline: auto;
-    }
+        & header {
+            max-width: 50rem;
+            margin-inline: auto;
+        }
 
-    #pricing .premium .card {
-        padding-bottom: 6rem;
-    }
+        & .premium .card {
+            padding-bottom: 6rem;
+        }
 
-    .btn-md {
-        padding: 0.75rem 1.5rem;
-        font-size: var(--fs-base);
-    }
+        .btn-md {
+            padding: .75rem 1.5rem;
+            font-size: var(--fs-base);
+        }
 
-    #pricing .card:nth-child(3) .separator {
-        margin-block: 1.5rem;
+        & .card:nth-child(3) .separator {
+            margin-block: 1.5rem;
+        }
     }
 }
