@@ -1,101 +1,74 @@
-/* Classe Botão */
+/* Base do botão */
 .btn {
-
-    /* Variáveis Color Button */
-    --btn-bg-color: var(--text-color-primary);
-    --btn-color: var(--bg-color);
+    background-color: var(--text-color-primary);
+    color: var(--bg-color);
     
-    /* CSS Button */
     border: 0;
-    background-color: transparent;
-
+    border-radius: 0.5rem;
+  
     display: flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
-
-    border-radius: .5rem;
-
-    font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);   
-    
+  
+    font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
     cursor: pointer;
-
-    background: var(--btn-bg-color);
-    color: var(--btn-color);
-}
-
-/* Classe Botão Hover */
-.btn:hover {
-    /* Variável Gradient button */
-    --btn-bg-color: linear-gradient(
-        90deg,
-        var(--brand-color-secondary) 0%,
-        var(--brand-color-primary) 100%
-        );
-    --btn-color: var(--surface-color);
-
-    /* Fix para o bug no Safari */
-    -webkit-background-clip: initial;
-    background-clip: initial;
-    color: var(--btn-color);
-}
-
-/* CSS Botão Small */
-.btn-sm {
-    padding: .5rem 1rem;
+  }
+  
+  /* Hover (com fallback direto, sem variável com gradient) */
+  .btn:hover {
+    background: linear-gradient(
+      90deg,
+      var(--brand-color-secondary) 0%,
+      var(--brand-color-primary) 100%
+    );
+    color: var(--surface-color);
+  }
+  
+  /* Tamanhos */
+  .btn-sm {
+    padding: 0.5rem 1rem;
     font-size: var(--fs-sm);
-}
-
-/* CSS Botão Medium */
-.btn-md {
-    padding: .75rem 1.5rem;
+  }
+  
+  .btn-md {
+    padding: 0.75rem 1.5rem;
     font-size: var(--fs-base);
-}
-
-/* CSS Botão Large */
-.btn-lg {
+  }
+  
+  .btn-lg {
     padding: 1rem 2rem;
     font-size: 1.125rem;
-}
-
-/* CSS Para fazer o Botão com contorno Gradiente */
-.btn[aria-label] {
-
+  }
+  
+  /* Estilo de botão com rótulo alternativo (aria-label) */
+  .btn[aria-label] {
     position: relative;
+  }
+  
+  /* ::before - fundo branco que simula borda interna */
+  .btn[aria-label]::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0.09375rem;
+    background-color: var(--bg-color);
+    z-index: 0;
+  }
+  
+  /* ::after - texto com clip de cor */
+  .btn[aria-label]::after {
+    content: attr(aria-label);
+    position: relative;
+    z-index: 1;
+  
+    background: var(--text-color-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
 
-    /* Essa é a borda do botão */
-    &::before {
-        /* Conteúdo vazio */
-        content: "";
-
-        /* Posição */
-        position: absolute;
-        border-radius: inherit;
-
-        /* Contorno */
-        inset: 0.09375rem;
-        background-color: var(--bg-color);
-    }
-
-    /* Esse é o gradiente da fonte */
-    &::after {
-        content: attr(aria-label);
-        background: var(--btn-bg-color);
-
-        /* Isso recorta o gradiente no formato do texto */
-        -webkit-background-clip: text;
-        
-        /* Tem que repetir sem o motor webkit */
-        background-clip: text;
-        
-        /* Isso tira a cor da fonte */
-        color: transparent;
-        position: relative;
-        z-index: 1;
-    }
-}
-
-/* Desktop */
 @media (width >= 80em) {
     .btn-sm {
         padding: 0.75rem 1.5rem;
