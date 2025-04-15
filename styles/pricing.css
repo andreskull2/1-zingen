@@ -101,7 +101,7 @@
             --fs-price: 2.5rem;
         }
 
-        & header {
+        #pricing header {
             max-width: 50rem;
             margin-inline: auto;
         }
