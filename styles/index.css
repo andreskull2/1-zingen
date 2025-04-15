@@ -7,7 +7,5 @@
 @import url(sections.css);
 @import url(about.css);
 @import url(cards.css);
-
-/* Este só será importado se for tela com largura mínima de 80em */
-@import url("features.css") screen and (min-width: 80em);
+@import url(features.css);
 @import url(pricing.css);
