@@ -1,64 +1,63 @@
-/* Classe Footer */
 footer {
     color: var(--text-color-secondary);
     font-weight: var(--fw-md);
+}
 
-    & .container {
-        padding-inline: 3rem;
+footer .container {
+    padding-inline: 3rem;
+    gap: 3rem;
+}
+
+footer .top {
+    gap: 3rem;
+}
+
+footer nav.even-columns {
+    gap: 4rem;
+}
+
+footer .top ul {
+    align-content: start;
+}
+
+footer .title {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-color-primary);
+}
+
+footer .bottom {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+footer .bottom > div {
+    margin-right: auto;
+}
+
+footer .bottom span {
+    font-size: 0.875rem; /* 14px/16 = 0.875rem */
+}
+
+/* Desktop - acima de 80em (~1280px) */
+@media (width >= 80em) {
+    footer .container {
+        padding-inline: 0;
+        padding-bottom: 2rem;
     }
 
-    & .container,
-    & .top {
-        gap: 3rem;
+    footer .top {
+        display: grid;
+        grid-template-columns: auto 1fr;
     }
 
-    & nav.even-columns {
-        gap: 4rem;
+    footer .top nav {
+        margin-left: auto;
     }
 
-    /* Ele incluiu essa para melhorar o alinhamento do eixo Y - Por ser Grid */
-    & .top ul {
-        align-content: start;
-    }
-
-    & .title {
-        font-size: 0.75rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--brand-color-primary);
-    }
-
-    /* Lembre-se que o bottom é FLEX */
-    & .bottom {
-        flex-wrap: wrap;
-
-        & > div {
-            margin-right: auto;
-        }
-
-        & span {
-            font-size: .875rem; /* 14px/16=0.875rem */
-        }
-    }
-
-    /* Desktop */
-    @media (width >= 80em) {
-        .container {
-            padding-inline: 0;
-            padding-bottom: 2rem;
-        }
-
-        /* O TOP é Grid */
-        & .top {
-            grid-template-columns: auto 1fr;
-
-            & nav {
-                margin-left: auto;
-
-                & ul {
-                    width: 14rem; /* 224px/16=14rem */
-                }
-            }
-        }
+    footer .top nav ul {
+        width: 14rem; /* 224px */
     }
 }
