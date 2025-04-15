@@ -30,10 +30,10 @@ a.social {
 
   /* CSS Social Twitter */
   &[aria-label="twitter"] {
-      --bg-img: url(../assets/icons/twitter.svg);
+      --bg-img: url(../assets/icons/twitter-x.svg);
   
       &:hover {
-          --bg-img: url(../assets/icons/twitter-hover.svg);
+          --bg-img: url(../assets/icons/twitter-x-hover.svg);
       }
   }
 
