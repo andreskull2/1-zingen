@@ -1,9 +1,7 @@
-/* Isso é específico da seção about */
-/* ID About */
 #about {
     background-color: var(--surface-color);
+}
 
-    & .even-columns {
+#about .even-columns {
         gap: 2rem;
     }
-}

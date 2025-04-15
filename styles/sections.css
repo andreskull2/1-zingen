@@ -1,32 +1,23 @@
-
-/* ID Imagem - Mobile */
 #smartphones-img {
-    margin-top: 5rem; /* 80px/16=5rem */
+    margin-top: 5rem;
     background: url(../assets/illustration.svg) top/cover;
-
 }
 
-/* CSS Para Sections */
-section {
-    & header {
-        & strong {
-            display: block;
-            font: var(--ff-md) var(--fs-sm)/100% var(--ff-sans);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
+section header strong {
+    display: block;
+    font: var(--ff-md) var(--fs-sm)/100% var(--ff-sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-color-primary);
+}
 
-            color: var(--brand-color-primary);
-        }
+section header h2 {
+    margin-top: .5rem;
+}
 
-        & h2 {
-            margin-top: .5rem;
-        }
-    }
-
-    & p {
-        margin-top: .5rem;
-        color: var(--text-color-secondary);
-    }
+section p {
+    margin-top: .5rem;
+    color: var(--text-color-secondary);
 }
 
 /* Desliga #smartphones-img no Desktop */
