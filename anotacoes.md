@@ -44,4 +44,6 @@ Na aula, foi abordado o uso de listas e a criação de um card especial. Para as
 Neste trecho, é abordada a criação da sessão de download do site. São detalhados os elementos que compõem essa sessão, como a estrutura do layout, a inserção de imagens e botões de download. Também são mencionadas questões de posicionamento e estilização dos elementos para garantir um design responsivo e agradável. Ao final, são feitos ajustes para corrigir possíveis problemas de layout, como o deslocamento horizontal.
 
 ## Footer
+Nesta aula vamos criar o footer da página.
 
+## Ajustes finais - publicação no GitHub Pages e encerramento 
