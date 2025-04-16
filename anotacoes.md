@@ -40,3 +40,8 @@ Neste trecho da aula, vamos criar a seção de planos e preços, destacando a es
 ## Seção pricing 2
 Na aula, foi abordado o uso de listas e a criação de um card especial. Para as listas, foram aplicadas cores e estilos específicos em cada elemento, como padding e tamanhos de fonte. Já para o card especial, foi detalhado o HTML e a estilização, incluindo um degradê nas bordas. Dicas práticas foram compartilhadas, como a importância de observar detalhes no design e utilizar ferramentas como o Figma para auxiliar na implementação. A aula focou em alinhamento e ajustes de elementos para um layout harmonioso.
 
+## Seção download
+Neste trecho, é abordada a criação da sessão de download do site. São detalhados os elementos que compõem essa sessão, como a estrutura do layout, a inserção de imagens e botões de download. Também são mencionadas questões de posicionamento e estilização dos elementos para garantir um design responsivo e agradável. Ao final, são feitos ajustes para corrigir possíveis problemas de layout, como o deslocamento horizontal.
+
+## Footer
+
